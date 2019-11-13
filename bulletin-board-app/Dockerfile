@@ -1,9 +1,4 @@
-FROM node:6.11.5
+FROM httpd  
 
-WORKDIR /usr/src/app
-COPY package.json .
-RUN npm install
-COPY . .
-
-CMD [ "npm", "start" ]
-
+WORKDIR /usr/local/apache2/htdocs
+COPY index.html .    
