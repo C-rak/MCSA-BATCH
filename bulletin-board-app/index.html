@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bulletin Board</title>
+  <title>NTMS</title>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="site.css">
   <style>
@@ -17,20 +17,20 @@
 <body>
 
   <div class="jumbotron">
-    <h1>Welcome to the Bulletin Board</h1>
+    <h1>Welcome to NTMS</h1>
   </div>
 
   <div class="container" id="events">
     <div class="col-sm-7">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3>Add an Event</h3>
+          <h3> Enroll your name</h3>
         </div>
         <div class="panel-body">
           <div>
-            <input class="form-control" placeholder="Title" v-model="event.title">
+            <input class="form-control" placeholder="NAME" v-model="event.title">
             <textarea class="form-control" placeholder="Detail" v-model="event.detail"></textarea>
-            <input type="date" class="form-control" placeholder="Date" v-model="event.date">
+            <input type="date" class="form-control" placeholder="Birth Date" v-model="event.date">
             <button class="btn btn-primary" v-on:click="addEvent">Submit</button>
           </div>
         </div>
